@@ -1,0 +1,53 @@
+blockquote {
+    color: green;
+}
+
+/* обратиться только к тем ссылкам, значение атрибута href которых начинается с https и сделайте их красным цветом */
+.holder a[href^="https"] {
+    color: red;
+}
+/* применится только для последней ссылки в первом cписке (link6) и задаст ей зеленый фоновый цвет
+ */
+.holder .list>li:last-child {
+    background-color: green;
+}
+/* будет действовать только для <p>, который идет после <ul> и задаст размер шрифта 26px */
+.holder ul + p {
+    font-size: 26px;
+}
+/* Оформите элементы согласно их содержимому (html не изменяем!):
+ */
+
+.text-box h3:first-child {
+    color: pink;
+}
+#greycol {
+    color: grey;
+}
+.text-box div p {
+    color: red;
+}
+.text-box p:nth-last-child(2) {
+    color: green;
+}
+.text-box .yellow {
+    color: yellow;
+}
+.bg-box {
+    width: 1162px;
+    height: 658px;
+    background-color: green;
+    background-image:
+        url(https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg),
+        url(https://www.freeiconspng.com/uploads/lamp-png-0.png),
+        url(https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png),
+        url(https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru),
+        url(https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png);
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+    background-position: center, top, bottom, left, right;
+    background-size: 600px, 50px, 250px, 50px, 50px;
+    
+
+
+
+}

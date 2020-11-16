@@ -1,0 +1,113 @@
+.cards {
+    background-color: #0d5825;
+    width: 800px;
+    height: 700px;
+    padding: 20px
+}
+blockquote {
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+blockquote p {
+    margin: 0;
+}
+.card {
+    width: 150px;
+}
+.card_wrapper {
+    position: relative;
+    padding: 150px;
+}
+.card1 {
+    transform: rotate(-20deg) translateX(110px); 
+}
+.card2 {
+    transform: rotate(-7deg) translateY(-30px);
+}
+.card3 {
+    transform: rotate(10deg) translate(-110px, 7px);
+}
+.card1:hover {
+    transform: rotate(-20deg) translate(110px, -20px);;
+}
+.card2:hover {
+    transform: rotate(-7deg) translateY(-50px);
+}
+.card3:hover {
+    transform: rotate(10deg) translate(-110px, -27px);;
+}
+/*  Второй уровень */
+.square_wrapper {
+    position: relative;
+    padding: 100px;
+    width: 400px;
+    height: 400px;
+}
+.square {
+    width: 150px;
+    height: 150px;
+}
+.red {
+    background-color: #F08080;
+}
+.blue {
+    position: relative;
+    background-color: #1E90FF;
+    transform: translate(75px, -75px);
+    z-index: 1;
+}
+.green {
+    background-color: #00FA9A;
+    transform: translate(150px, -130px);
+}
+
+/* Третий уровень */
+.menu_wrapper {
+    width: 300px;
+    height: 400px;
+    background-color:#808080;
+    padding: 40px 0;
+    transform: translateX(-270px);
+    transition: transform 0.7s ease;
+}
+.menu {
+    list-style: none;
+}
+li {
+    margin-bottom: 15px;
+    position: relative;
+}
+li:before {
+    content: ""; 
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-color:#FFA500;
+    border: #000000 solid 1.5px;
+    transform: rotate(45deg);
+}
+.menu__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.menu__link:hover {
+    color: #FFA500;
+}
+.menu__label{
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: translate(225px, -40px) rotate(90deg);
+}
+.menu_wrapper:hover{
+    transform: translateX(0px);
+}
+.menu_wrapper:hover .menu__label {
+    display: none;
+}

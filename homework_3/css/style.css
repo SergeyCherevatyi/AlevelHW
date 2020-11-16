@@ -1,0 +1,26 @@
+.box {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px;
+    margin-bottom: 30px;
+    border: dashed 2px #FF0000;
+    background-color: #008000;
+    box-sizing: border-box;
+}
+
+.float-box {
+    width: 40%;
+    float: left;
+    text-align: justify;
+
+}
+.left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.right {
+    width: 170px;
+    float: right;
+    margin: 10px;
+}
